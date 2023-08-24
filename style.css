@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root{
+  --clr-primary: hsl(257, 40%, 49%);
+  --clr-secondary: hsl(300, 69%, 71%);
+
+  --ff-accent: 'Poppins';
+  --ff-base: 'Open Sans';
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body{
+  font-family: var(--ff-base);
+  color: white;
+  background-color: var(--clr-primary);
+  background-image: url(./assets/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main{
+  width: 595px;
+  height: 1448px;
+  margin: 75px auto 40px;
+}
+
+/* --------------- SECCION UNO ----------*/
+#section1{
+  height: 724px;
+}
+
+#logo-container{
+  width: 180px;
+}
+
+#mockup{
+  width: 595px;
+}
+
+
+/* --------------- SECCION DOS ----------*/
+#section2{
+  height: 724px;
+}
+
+h1{
+  font-family: var(--ff-accent);
+  font-size: 46px;
+  text-align: center;
+  height: 170px;
+}
+
+#section2 p{
+  font-size: 31px;
+  text-align: center;
+  height: 280px;
+}
+
+.btn-register{
+  text-align: center;
+  margin-bottom: 122px;
+}
+
+.btn-register a{
+  width: 440px;
+  height: 86px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 25px;
+  color: var(--clr-primary);
+  display: inline-block;
+  padding-top: 22px;
+  text-decoration: none;
+}
+.btn-register a:hover{
+  background-color: var(--clr-secondary);
+  color: white;
+}
+
+.social-container{
+  text-align: center;
+}
+
+.redes{
+  width: 208px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.redes a{
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  padding-top: 15px;
+}
+
+.redes a:hover{
+  border-color: var(--clr-secondary);
+  color: var(--clr-secondary);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.attribution a {
+  color: var(--clr-secondary);
+  text-decoration: none;
+}
+
+@media (min-width: 1284px) {
+  body{
+    background-image: url(./assets/images/bg-desktop.svg);
+    background-size: unset;
+  }
+  main{
+    margin: 60px auto 0px;
+    width: 1284px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* --------------- SECCION UNO ----------*/
+  #section1{
+    width: 753px;
+    height: 700px;
+  }
+  #logo-container{
+    height: 134px;
+  }
+  #mockup{
+    width: 696px;
+  }
+  /* --------------- SECCION DOS ----------*/
+  #section2{
+    height: 700px;
+  }
+
+  h1{
+    margin-top: 165px;
+    height: 133px;
+    font-size: 36px;
+    text-align: left;
+    padding-right: 93px;
+  }
+  #section2 p{
+    height: 98px;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 17px;
+  }
+
+  .btn-register{
+    text-align: left;
+    margin-bottom: 179px;
+  }
+  .btn-register a{
+    width: 200px;
+    height: 58px;
+    font-size: 20px;
+    padding-top: 14px;
+    text-align: center;
+  }
+  .social-container{
+    text-align: right;
+  }
+  .redes{
+    width: 156px;
+  }
+  .redes a{
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    padding: 9px;
+    text-align: center;
+  }
+}
